@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المعرض - شاليه الغلا</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>شاليه الغلا</h2>
+                    <span>Al Ghala Chalet</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+                    <li><a href="about.html" class="nav-link">من نحن</a></li>
+                    <li><a href="gallery.html" class="nav-link active">المعرض</a></li>
+                    <li><a href="services.html" class="nav-link">الخدمات</a></li>
+                    <li><a href="pricing.html" class="nav-link">الأسعار</a></li>
+                    <li><a href="reviews.html" class="nav-link">الآراء</a></li>
+                    <li><a href="contact.html" class="nav-link">تواصل معنا</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>معرض الصور</h1>
+            <p>اكتشفوا جمال شاليه الغلا</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="gallery-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="pool">المسبح</button>
+                <button class="filter-btn" data-filter="rooms">الغرف</button>
+                <button class="filter-btn" data-filter="outdoor">الجلسات الخارجية</button>
+                <button class="filter-btn" data-filter="view">الإطلالة</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-grid">
+        <div class="container">
+            <div class="gallery-items">
+                <!-- Pool Images -->
+                <div class="gallery-item" data-category="pool">
+                    <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=500" alt="مسبح شاليه الغلا">
+                    <div class="gallery-overlay">
+                        <h3>المسبح الرئيسي</h3>
+                        <p>مسبح مُدفأ على مدار السنة</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="pool">
+                    <img src="https://images.pexels.com/photos/2506988/pexels-photo-2506988.jpeg?auto=compress&cs=tinysrgb&w=500" alt="منطقة المسبح">
+                    <div class="gallery-overlay">
+                        <h3>منطقة المسبح</h3>
+                        <p>مساحة واسعة للاستمتاع والاسترخاء</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="pool">
+                    <img src="https://images.pexels.com/photos/1447254/pexels-photo-1447254.jpeg?auto=compress&cs=tinysrgb&w=500" alt="مسبح ليلي">
+                    <div class="gallery-overlay">
+                        <h3>المسبح ليلاً</h3>
+                        <p>إضاءة رومانسية للسهرات الممتعة</p>
+                    </div>
+                </div>
+
+                <!-- Rooms Images -->
+                <div class="gallery-item" data-category="rooms">
+                    <img src="https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=500" alt="غرفة النوم الرئيسية">
+                    <div class="gallery-overlay">
+                        <h3>غرفة النوم الرئيسية</h3>
+                        <p>راحة وأناقة في التصميم</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="rooms">
+                    <img src="https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=500" alt="غرفة معيشة">
+                    <div class="gallery-overlay">
+                        <h3>غرفة المعيشة</h3>
+                        <p>مساحة مريحة للعائلة</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="rooms">
+                    <img src="https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=500" alt="المطبخ">
+                    <div class="gallery-overlay">
+                        <h3>المطبخ</h3>
+                        <p>مجهز بالكامل لراحتكم</p>
+                    </div>
+                </div>
+
+                <!-- Outdoor Images -->
+                <div class="gallery-item" data-category="outdoor">
+                    <img src="https://images.pexels.com/photos/1516438/pexels-photo-1516438.jpeg?auto=compress&cs=tinysrgb&w=500" alt="جلسة خارجية">
+                    <div class="gallery-overlay">
+                        <h3>الجلسة الخارجية</h3>
+                        <p>مكان مثالي للاسترخاء</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="outdoor">
+                    <img src="https://images.pexels.com/photos/2233729/pexels-photo-2233729.jpeg?auto=compress&cs=tinysrgb&w=500" alt="منطقة الشواء">
+                    <div class="gallery-overlay">
+                        <h3>منطقة الشواء</h3>
+                        <p>لقضاء أوقات ممتعة مع العائلة</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="outdoor">
+                    <img src="https://images.pexels.com/photos/1587927/pexels-photo-1587927.jpeg?auto=compress&cs=tinysrgb&w=500" alt="الحديقة">
+                    <div class="gallery-overlay">
+                        <h3>الحديقة</h3>
+                        <p>مساحات خضراء جميلة</p>
+                    </div>
+                </div>
+
+                <!-- View Images -->
+                <div class="gallery-item" data-category="view">
+                    <img src="https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=500" alt="إطلالة البحر الميت">
+                    <div class="gallery-overlay">
+                        <h3>إطلالة البحر الميت</h3>
+                        <p>منظر خلاب لا يُنسى</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="view">
+                    <img src="https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg?auto=compress&cs=tinysrgb&w=500" alt="غروب الشمس">
+                    <div class="gallery-overlay">
+                        <h3>غروب الشمس</h3>
+                        <p>لحظات سحرية كل مساء</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="view">
+                    <img src="https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg?auto=compress&cs=tinysrgb&w=500" alt="المنظر العام">
+                    <div class="gallery-overlay">
+                        <h3>المنظر العام</h3>
+                        <p>جمال الطبيعة الأردنية</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="rooms">
+                    <img src="https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=500" alt="الحمام">
+                    <div class="gallery-overlay">
+                        <h3>الحمام</h3>
+                        <p>تصميم عصري وأنيق</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="lightbox-caption">
+            <h3 id="lightbox-title"></h3>
+            <p id="lightbox-desc"></p>
+        </div>
+        <a class="lightbox-prev">&#10094;</a>
+        <a class="lightbox-next">&#10095;</a>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>هل أعجبكم ما رأيتم؟</h2>
+            <p>احجزوا إقامتكم الآن واستمتعوا بهذه التجربة الرائعة</p>
+            <a href="https://wa.me/962792061993" class="cta-button" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                احجز الآن
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>شاليه الغلا</h3>
+                    <p>تجربة استثنائية بجانب البحر الميت في الأردن. استمتعوا بأجمل الأوقات في بيئة فاخرة ومريحة.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="gallery.html">المعرض</a></li>
+                        <li><a href="services.html">الخدمات</a></li>
+                        <li><a href="pricing.html">الأسعار</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>تواصل معنا</h4>
+                    <div class="contact-info">
+                        <a href="https://wa.me/962792061993" class="contact-link">
+                            <i class="fab fa-whatsapp"></i>
+                            +962 79 206 1993
+                        </a>
+                        <a href="https://instagram.com/alghala_chalet" class="contact-link">
+                            <i class="fab fa-instagram"></i>
+                            @alghala_chalet
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 شاليه الغلا. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا - شاليه الغلا</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>شاليه الغلا</h2>
+                    <span>Al Ghala Chalet</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+                    <li><a href="about.html" class="nav-link">من نحن</a></li>
+                    <li><a href="gallery.html" class="nav-link">المعرض</a></li>
+                    <li><a href="services.html" class="nav-link">الخدمات</a></li>
+                    <li><a href="pricing.html" class="nav-link">الأسعار</a></li>
+                    <li><a href="reviews.html" class="nav-link">الآراء</a></li>
+                    <li><a href="contact.html" class="nav-link active">تواصل معنا</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>تواصل معنا</h1>
+            <p>نحن هنا لمساعدتكم في أي وقت</p>
+        </div>
+    </section>
+
+    <!-- Contact Methods -->
+    <section class="contact-methods">
+        <div class="container">
+            <h2 class="section-title">طرق التواصل</h2>
+            <div class="contact-grid">
+                <div class="contact-card primary">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>واتساب</h3>
+                    <p>أسرع طريقة للتواصل والحجز</p>
+                    <a href="https://wa.me/962792061993" class="contact-button" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        +962 79 206 1993
+                    </a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>الهاتف</h3>
+                    <p>للاستفسارات والحجوزات</p>
+                    <a href="tel:+962792061993" class="contact-button">
+                        <i class="fas fa-phone"></i>
+                        +962 79 206 1993
+                    </a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3>إنستاجرام</h3>
+                    <p>تابعونا لآخر الأخبار والصور</p>
+                    <a href="https://instagram.com/alghala_chalet" class="contact-button" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                        @alghala_chalet
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="form-grid">
+                <div class="form-content">
+                    <h2>أرسلوا لنا رسالة</h2>
+                    <p>املؤوا النموذج أدناه وسنتواصل معكم في أقرب وقت</p>
+                    
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>ساعات العمل</h4>
+                                <p>يومياً من 8:00 صباحاً - 10:00 مساءً</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-reply"></i>
+                            <div>
+                                <h4>وقت الرد</h4>
+                                <p>نرد على جميع الاستفسارات خلال ساعة</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-language"></i>
+                            <div>
+                                <h4>اللغات</h4>
+                                <p>العربية والإنجليزية</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">الاسم الكامل *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">رقم الهاتف *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="checkin">تاريخ الوصول</label>
+                            <input type="date" id="checkin" name="checkin">
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">عدد الضيوف</label>
+                            <select id="guests" name="guests">
+                                <option value="">اختر العدد</option>
+                                <option value="1-2">1-2 أشخاص</option>
+                                <option value="3-4">3-4 أشخاص</option>
+                                <option value="5-6">5-6 أشخاص</option>
+                                <option value="7-8">7-8 أشخاص</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">موضوع الرسالة *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">اختر الموضوع</option>
+                            <option value="booking">استفسار حجز</option>
+                            <option value="pricing">استفسار أسعار</option>
+                            <option value="services">استفسار خدمات</option>
+                            <option value="complaint">شكوى</option>
+                            <option value="suggestion">اقتراح</option>
+                            <option value="other">أخرى</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">الرسالة *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="اكتبوا رسالتكم هنا..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">
+                        <i class="fas fa-paper-plane"></i>
+                        إرسال الرسالة
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location-section">
+        <div class="container">
+            <h2 class="section-title">موقع الشاليه</h2>
+            <div class="location-grid">
+                <div class="location-info">
+                    <h3>العنوان</h3>
+                    <p>منطقة البحر الميت، الأردن</p>
+                    
+                    <div class="location-details">
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>المسافة من عمان</h4>
+                                <p>حوالي 60 كيلومتر (ساعة بالسيارة)</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-compass"></i>
+                            <div>
+                                <h4>الاتجاهات</h4>
+                                <p>طريق البحر الميت السريع</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-landmark"></i>
+                            <div>
+                                <h4>معالم قريبة</h4>
+                                <p>منتجعات البحر الميت، شواطئ عامة</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://maps.google.com/?q=Dead+Sea+Jordan" class="directions-button" target="_blank">
+                        <i class="fas fa-directions"></i>
+                        احصل على الاتجاهات
+                    </a>
+                </div>
+
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.789!2d35.5!3d31.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzEuNTAwMDAwLCAzNS41MDAwMDA!5e0!3m2!1sen!2sjo!4v1234567890"
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">الأسئلة الشائعة</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>كيف يمكنني الحجز؟</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>يمكنكم الحجز عبر واتساب على الرقم +962792061993 أو الاتصال مباشرة. نحتاج لتحديد التاريخ وعدد الأشخاص ودفع عربون لتأكيد الحجز.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>ما هي ساعات الوصول والمغادرة؟</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>الوصول من الساعة 3:00 مساءً والمغادرة حتى الساعة 12:00 ظهراً. يمكن التنسيق لأوقات مختلفة حسب الظروف.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>هل المسبح مُدفأ؟</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، المسبح مُدفأ على مدار السنة وصالح للاستخدام في جميع الفصول.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>ما هو العدد الأقصى للضيوف؟</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>الحد الأقصى 8 أشخاص. الشاليه مناسب للعائلات ومجموعات الأصدقاء.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>هل يوجد مواقف سيارات؟</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، يوجد مواقف آمنة ومظللة لعدة سيارات داخل الشاليه.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>هل يُسمح بالحيوانات الأليفة؟</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>يُسمح بالحيوانات الأليفة الصغيرة بشروط معينة. يُرجى التنسيق معنا مسبقاً.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>لا تترددوا في التواصل معنا</h2>
+            <p>فريقنا جاهز لمساعدتكم في حجز إقامة مميزة</p>
+            <a href="https://wa.me/962792061993" class="cta-button" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                تواصل الآن
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>شاليه الغلا</h3>
+                    <p>تجربة استثنائية بجانب البحر الميت في الأردن. استمتعوا بأجمل الأوقات في بيئة فاخرة ومريحة.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="gallery.html">المعرض</a></li>
+                        <li><a href="services.html">الخدمات</a></li>
+                        <li><a href="pricing.html">الأسعار</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>تواصل معنا</h4>
+                    <div class="contact-info">
+                        <a href="https://wa.me/962792061993" class="contact-link">
+                            <i class="fab fa-whatsapp"></i>
+                            +962 79 206 1993
+                        </a>
+                        <a href="https://instagram.com/alghala_chalet" class="contact-link">
+                            <i class="fab fa-instagram"></i>
+                            @alghala_chalet
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 شاليه الغلا. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
